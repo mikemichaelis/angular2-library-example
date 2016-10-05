@@ -1,0 +1,35 @@
+{
+  "name": "angular2-library-example",
+  "version": "1.0.6",
+  "description": "An example repository for building your own Angular 2 library",
+  "main": "angular2-library-example.js",
+  "scripts": {
+    "watch": "tsc -p src -w",
+    "build": "rm -rf lib && tsc -p src"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jhades/angular2-library-seed.git"
+  },
+  "keywords": [
+    "Angular",
+    "2",
+    "Library",
+    "Seed"
+  ],
+  "author": "jhades.dev@gmail.com",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/jhades/angular2-library-seed/issues"
+  },
+  "homepage": "https://github.com/jhades/angular2-library-seed#readme",
+  "devDependencies": {
+    "@types/core-js": "^0.9.34",
+    "typescript": "^2.0.2"
+  },
+  "dependencies": {
+    "@angular/core": "^2.0.0",
+    "rxjs": "5.0.0-beta.12",
+    "zone.js": "0.6.23"
+  }
+}
