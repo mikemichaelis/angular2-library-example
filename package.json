@@ -1,5 +1,5 @@
 {
-  "name": "angular2-library-example",
+  "name": "x-ng2-library-example",
   "version": "1.0.7",
   "description": "An example repository for building your own Angular 2 library",
   "main": "angular2-library-example.js",
