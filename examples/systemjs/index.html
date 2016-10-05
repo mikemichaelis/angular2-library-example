@@ -1,46 +1,22 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-
+<html>
+  <head>
+    <title>x-ng2-library-example systemjs test app</title>
     <meta charset="UTF-8">
-    <title>Example TODO Application using the ng2-store</title>
-
-    <script src="/node_modules/angular2/bundles/angular2-polyfills.js"></script>
-    <script src="/node_modules/es6-shim/es6-shim.min.js"></script>
-    <script src="/node_modules/systemjs/dist/system.src.js"></script>
-    <script src="/node_modules/angular2/bundles/http.min.js"></script>
-
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- 1. Load libraries -->
+     <!-- Polyfill(s) for older browsers -->
+    <script src="node_modules/core-js/client/shim.min.js"></script>
+    <script src="node_modules/zone.js/dist/zone.js"></script>
+    <script src="node_modules/reflect-metadata/Reflect.js"></script>
+    <script src="node_modules/systemjs/dist/system.src.js"></script>
+    <!-- 2. Configure SystemJS -->
+    <script src="systemjs.config.js"></script>
     <script>
-        System.config({
-            defaultJSExtensions: true,
-            packages: {
-                "/angular2": {"defaultExtension": false}
-            },
-            map: {
-                'angular2-library-example': 'node_modules/angular2-library-example'
-            }
-        });
+      System.import('app').catch(function(err){ console.error(err); });
     </script>
-
-    <script src="/node_modules/rxjs/bundles/Rx.js"></script>
-    <script src="/node_modules/angular2/bundles/angular2.js"></script>
-
-    <script>
-        System.import('build/App').catch(console.log.bind(console));
-    </script>
-
-    <style>
-
-        [override] hello-world h1 {
-            color:red;
-        }
-
-    </style>
-
-</head>
-<body override>
-
-<app></app>
-
-</body>
+  </head>
+  <!-- 3. Display the application -->
+  <body>
+    <my-app>Loading...</my-app>
+  </body>
 </html>

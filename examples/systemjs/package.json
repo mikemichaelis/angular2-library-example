@@ -4,21 +4,26 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "watch": "rm -rf build && mkdir build && tsc -p src -w",
-    "build": "rm -rf build && mkdir build && tsc -p src || true",
+    "watch": "tsc -p app -w",
+    "build": "tsc -p app",
     "start": "http-server -c-1 ."
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "typescript": "^1.7.5"
+    "@types/core-js": "^0.9.34",
+    "typescript": "^2.0.2"
   },
   "dependencies": {
-    "angular2": "^2.0.0-beta.0",
-    "angular2-library-example": "^1.0.2",
-    "es6-shim": "^0.35.0",
+    "@angular/common": "^2.0.0",
+    "@angular/compiler": "^2.0.0",
+    "@angular/core": "^2.0.0",
+    "@angular/platform-browser": "^2.0.0",
+    "@angular/platform-browser-dynamic": "^2.0.0",
+    "core-js": "^2.4.1",
     "http-server": "^0.8.5",
-    "reflect-metadata": "0.1.2",
-    "systemjs": "^0.19.9"
+    "reflect-metadata": "0.1.8",
+    "systemjs": "^0.19.38",
+    "x-ng2-library-example": "^1.0.7"
   }
 }

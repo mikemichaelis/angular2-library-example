@@ -22,19 +22,20 @@
   },
   "homepage": "https://github.com/jhades/ng2-webpack-minimal#readme",
   "devDependencies": {
-    "typescript": "^1.7.5",
+    "@types/core-js": "^0.9.34",
+    "typescript": "^2.0.2",
     "webpack": "^1.12.9",
     "webpack-dev-server": "^1.14.0"
   },
   "dependencies": {
-    "angular2": "^2.0.0-beta.0",
-    "angular2-library-example": "^1.0.6",
-    "es6-promise": "^3.0.2",
-    "es6-shim": "^0.35.0",
+    "@angular/core": "^2.0.0",
+    "x-ng2-library-example": "^1.0.7",
+    "http-server": "^0.8.5",
+    "reflect-metadata": "0.1.8",
+    "systemjs": "^0.19.38",
     "ng2-translate": "^1.2.4",
-    "reflect-metadata": "0.1.2",
-    "rxjs": "5.0.0-beta.2",
+    "rxjs": "5.0.0-beta.12",
     "ts-loader": "^0.7.2",
-    "zone.js": "^0.6.6"
+    "zone.js": "^0.6.23"
   }
 }
